@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="@drawable/busycity"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="265dp"
+        android:layout_margin="100dp">
+
+        <ProgressBar
+            android:id="@+id/circlePbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cicular_shape"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/cicular_progress_bar"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0 : 00 : 07"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onClickStart"
+            android:padding="10dp"
+            android:src="@drawable/videoplaybutton" />
+
+        <ImageView
+            android:id="@+id/restart"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onclickrestart"
+            android:padding="10dp"
+            android:src="@drawable/rotate" />
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onClickStop"
+            android:padding="10dp"
+            android:src="@drawable/stopbutton"
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
